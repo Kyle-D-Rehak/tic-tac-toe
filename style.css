@@ -1,0 +1,62 @@
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainContainer {
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#boardContainer {
+    position: relative;
+}
+
+#gameGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 275px);
+    grid-template-rows: repeat(3, 275px);
+    gap: 5px;
+    z-index: 5;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+}
+
+#gameGrid > div {
+    background-color: white;
+    height: 275px;
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ui-button {
+    width: 10rem;
+    height: 3rem;
+    border-style: none;
+}
+
+.addMarkerButton {
+    height: 275px;
+    width: 275px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.addMarkerButton:hover {
+    background-color: rgba(251, 255, 0, 0.144);
+    cursor: pointer;
+}
+
