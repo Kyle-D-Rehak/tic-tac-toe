@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 #mainContainer {
@@ -23,6 +24,7 @@
 }
 
 #gameGrid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 275px);
     grid-template-rows: repeat(3, 275px);
@@ -60,3 +62,29 @@
     cursor: pointer;
 }
 
+.gameOverDiv {
+    width: 30rem;
+    height: 10rem;
+    position: absolute;
+    top: calc(50% - 5rem);
+    left: calc(50% - 15rem);
+    z-index: 10;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.modalBlur {
+    position: absolute;
+    z-index: 6;
+    filter: blur(.5rem);
+    background-color: rgba(137, 137, 137, 0.202);
+    top: calc(50% - 423px);
+    left: calc(50% - 417.5px);
+    width: 835px;
+    height: 835px;
+}
